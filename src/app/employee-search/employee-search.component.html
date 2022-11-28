@@ -6,10 +6,10 @@
             <div class="row g-3 m-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Employee Code</label>
-                    <input type="text" class="form-control">
+                    <input name="employeeCode" [(ngModel)]="employeeCode" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success">Search</button>
+                    <button (click)="searchEmployee()" class="btn btn-success">Search</button>
                 </div>
             </div>
         </div>

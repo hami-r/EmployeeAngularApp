@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class EmployeeEditComponent {
 
+  employeeCode = ""
+
+  editEmployee = () => {
+    let data:any = {
+      "employeeCode":this.employeeCode
+    }
+    console.log(data);
+    
+  }
 }
